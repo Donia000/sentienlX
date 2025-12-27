@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SentinelX - AI Behavioral Threat Detection | Sinai University</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Exo+2:wght@300;400;500;600;700;800&family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Background Effects -->
+    <div class="cyber-bg"></div>
+    <div class="animated-grid"></div>
+    <div class="particles-container" id="particles"></div>
+    
+    <!-- Header -->
+    <header id="header">
+        <div class="nav-container">
+            <a href="#home" class="logo">
+                <div class="logo-icon">SX</div>
+                <div class="logo-text">
+                    <div class="logo-title">SentinelX</div>
+                    <div class="logo-subtitle">Sinai University - IT Department</div>
+                </div>
+            </a>
+            
+            <nav>
+                <ul>
+                    <li><a href="#home" class="active">HOME</a></li>
+                    <li><a href="#problem">PROBLEM</a></li>
+                    <li><a href="#solution">SOLUTION</a></li>
+                    <li><a href="#workflow">WORKFLOW</a></li>
+                    <li><a href="#ai">AI ANALYSIS</a></li>
+                    <li><a href="#scope">SCOPE & LIMITATIONS</a></li>
+                    <li><a href="#team">TEAM</a></li>
+                </ul>
+                <div class="nav-indicator"></div>
+            </nav>
+            
+            <a href="#demo" class="btn" style="padding: 12px 25px; font-size: 14px;">
+                <i class="fas fa-play"></i> LIVE DEMO
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <div class="hero-badge">
+                        <i class="fas fa-graduation-cap"></i> GRADUATION PROJECT 2024
+                    </div>
+                    <h1 class="hero-title animate-float">
+                    </br>
+                    <br>
+                        <span>Behavioral Threat Detection System</span>
+                    </h1>
+                    <h2 class="hero-subtitle animate-float" style="animation-delay: 0.2s">
+                        AI-Powered Continuous Security Monitoring Beyond Authentication
+                    </h2>
+                    <p class="hero-description animate-float" style="animation-delay: 0.4s">
+                        Our advanced system addresses the critical security gap after login, where traditional methods fail. By continuously analyzing user behavior patterns in real-time, SentinelX detects insider threats and sophisticated attacks that conventional security systems cannot identify.
+                    </p>
+                    
+                    <div class="hero-stats animate-float" style="animation-delay: 0.6s">
+                        <div class="stat-item">
+                            <div class="stat-number" style="font-size: 3rem; font-weight: 800; background: linear-gradient(90deg, var(--cyber-blue), var(--neon-blue)); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">99.7%</div>
+                            <div class="stat-label" style="font-size: 14px; color: rgba(255,255,255,0.7);">Detection Accuracy</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number" style="font-size: 3rem; font-weight: 800; background: linear-gradient(90deg, var(--cyber-blue), var(--neon-blue)); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">0.2s</div>
+                            <div class="stat-label" style="font-size: 14px; color: rgba(255,255,255,0.7);">Response Time</div>
+                        </div>
+                    </div>
+                    
+                    <div class="hero-buttons animate-float" style="animation-delay: 0.8s; margin-top: 40px;">
+                        <a href="#demo" class="btn">
+                            <i class="fas fa-play-circle"></i> WATCH DEMO
+                        </a>
+                        <a href="#problem" class="btn btn-outline">
+                            <i class="fas fa-book"></i> LEARN MORE
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="globe-container animate-float" style="animation-delay: 1s">
+                    <div class="globe">
+                        <div class="globe-sphere"></div>
+                        <div class="data-ring ring-1"></div>
+                        <div class="data-ring ring-2"></div>
+                        <div class="data-ring ring-3"></div>
+                        
+                        <!-- Interactive Threat Points -->
+                        <div class="threat-point" style="top: 30%; left: 40%;" data-threat="Unusual Login Pattern"></div>
+                        <div class="threat-point" style="top: 60%; left: 25%;" data-threat="Suspicious File Access"></div>
+                        <div class="threat-point" style="top: 45%; left: 65%;" data-threat="Anomalous Network Activity"></div>
+                        <div class="threat-point" style="top: 70%; left: 55%;" data-threat="Privilege Escalation"></div>
+                        <div class="threat-point" style="top: 35%; left: 75%;" data-threat="Data Exfiltration"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problem Section -->
+    <section id="problem" style="background: rgba(0,0,0,0.3);">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge">THE SECURITY GAP</div>
+                <h2 class="section-title">Problem Statement</h2>
+                <p class="section-description">
+                    Traditional security systems fail to address modern threats, especially after initial authentication. We identified five critical limitations that leave organizations vulnerable.
+                </p>
+            </div>
+            
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px;">
+                <div class="card problem-card animate-float">
+                    <div class="problem-number">01</div>
+                    <h3 class="problem-title">Limited Traditional Security</h3>
+                    <p>Existing methods detect only known threats and fail completely after login, leaving systems vulnerable to novel attacks.</p>
+                </div>
+                
+                <div class="card problem-card animate-float" style="animation-delay: 0.2s">
+                    <div class="problem-number">02</div>
+                    <h3 class="problem-title">Rising Insider Threats</h3>
+                    <p>34% of data breaches involve internal actors. Authorized users can perform malicious actions undetected.</p>
+                </div>
+                
+                <div class="card problem-card animate-float" style="animation-delay: 0.4s">
+                    <div class="problem-number">03</div>
+                    <h3 class="problem-title">Reactive Security Model</h3>
+                    <p>Most security actions occur post-breach, causing significant damage before any protective measures.</p>
+                </div>
+                
+                <div class="card problem-card animate-float" style="animation-delay: 0.6s">
+                    <div class="problem-number">04</div>
+                    <h3 class="problem-title">High False Positives</h3>
+                    <p>Conventional systems generate excessive alerts (10,000+ daily), causing alert fatigue and reduced effectiveness.</p>
+                </div>
+                
+                <div class="card problem-card animate-float" style="animation-delay: 0.8s">
+                    <div class="problem-number">05</div>
+                    <h3 class="problem-title">Windows Vulnerabilities</h3>
+                    <p>73% of corporate desktops run Windows, lacking Linux-like security features, making them prime targets.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solution Section -->
+    <section id="solution">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge">OUR SOLUTION</div>
+                <h2 class="section-title">Project Objectives</h2>
+                <p class="section-description">
+                    SentinelX overcomes traditional security limitations through continuous behavioral analysis and AI-driven threat detection.
+                </p>
+            </div>
+            
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px;">
+                <div class="card animate-float">
+                    <div class="card-icon">
+                        <i class="fas fa-user-shield"></i>
+                    </div>
+                    <h3>Reduce Insider Threats</h3>
+                    <p>Minimize risks from malicious or compromised users, addressing over one-third of security breaches.</p>
+                </div>
+                
+                <div class="card animate-float" style="animation-delay: 0.2s">
+                    <div class="card-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3>Automated Real-Time Response</h3>
+                    <p>Trigger instant preventive measures without manual IT intervention, reducing response time to milliseconds.</p>
+                </div>
+                
+                <div class="card animate-float" style="animation-delay: 0.4s">
+                    <div class="card-icon">
+                        <i class="fab fa-windows"></i>
+                    </div>
+                    <h3>Enhance Windows Security</h3>
+                    <p>Strengthen Windows endpoints with advanced protection while maintaining seamless user experience.</p>
+                </div>
+                
+                <div class="card animate-float" style="animation-delay: 0.6s">
+                    <div class="card-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>AI-Driven Analysis</h3>
+                    <p>Use machine learning to analyze behavior, detect anomalies early, and reduce false positives by 85%.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Workflow Section -->
+    <section id="workflow" style="background: rgba(0,0,0,0.3);">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge">SYSTEM ARCHITECTURE</div>
+                <h2 class="section-title">How SentinelX Works</h2>
+                <p class="section-description">
+                    Our system follows a sophisticated six-stage workflow for comprehensive threat detection and response.
+                </p>
+            </div>
+            
+            <div class="workflow-container">
+                <div class="workflow-line"></div>
+                <div class="workflow-steps">
+                    <div class="workflow-step animate-float">
+                        <div class="step-circle">
+                            <i class="fas fa-mouse-pointer"></i>
+                            <div class="step-number">1</div>
+                        </div>
+                        <h3>Data Collection</h3>
+                        <p style="font-size: 14px; color: rgba(255,255,255,0.7);">Monitors user interactions and behaviors</p>
+                    </div>
+                    
+                    <div class="workflow-step animate-float" style="animation-delay: 0.1s">
+                        <div class="step-circle">
+                            <i class="fas fa-database"></i>
+                            <div class="step-number">2</div>
+                        </div>
+                        <h3>Behavioral Profiling</h3>
+                        <p style="font-size: 14px; color: rgba(255,255,255,0.7);">Creates unique user fingerprints</p>
+                    </div>
+                    
+                    <div class="workflow-step animate-float" style="animation-delay: 0.2s">
+                        <div class="step-circle">
+                            <i class="fas fa-brain"></i>
+                            <div class="step-number">3</div>
+                        </div>
+                        <h3>AI Analysis</h3>
+                        <p style="font-size: 14px; color: rgba(255,255,255,0.7);">Machine learning comparison</p>
+                    </div>
+                    
+                    <div class="workflow-step animate-float" style="animation-delay: 0.3s">
+                        <div class="step-circle">
+                            <i class="fas fa-chart-line"></i>
+                            <div class="step-number">4</div>
+                        </div>
+                        <h3>Anomaly Detection</h3>
+                        <p style="font-size: 14px; color: rgba(255,255,255,0.7);">Identifies unusual patterns</p>
+                    </div>
+                    
+                    <div class="workflow-step animate-float" style="animation-delay: 0.4s">
+                        <div class="step-circle">
+                            <i class="fas fa-exclamation-triangle"></i>
+                            <div class="step-number">5</div>
+                        </div>
+                        <h3>Threat Assessment</h3>
+                        <p style="font-size: 14px; color: rgba(255,255,255,0.7);">Classifies threat levels</p>
+                    </div>
+                    
+                    <div class="workflow-step animate-float" style="animation-delay: 0.5s">
+                        <div class="step-circle">
+                            <i class="fas fa-shield-alt"></i>
+                            <div class="step-number">6</div>
+                        </div>
+                        <h3>Automated Response</h3>
+                        <p style="font-size: 14px; color: rgba(255,255,255,0.7);">Executes security measures</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- AI Analysis Section -->
+<section id="ai">
+    <div class="container">
+        <div class="section-header">
+            <div class="section-badge">ADVANCED TECHNOLOGY</div>
+            <h2 class="section-title">AI Analysis Engine</h2>
+            <p class="section-description">
+                Our sophisticated AI engine employs multiple machine learning techniques for accurate threat detection.
+            </p>
+        </div>
+        
+        <!-- Interactive Neural Network Visualization -->
+        <div class="neural-visualization-container">
+            <div class="network-controls">
+                <button class="network-btn" onclick="toggleNetworkPulse()">
+                    <i class="fas fa-play"></i> Activate Network
+                </button>
+                <button class="network-btn" onclick="simulateDataFlow()">
+                    <i class="fas fa-bolt"></i> Simulate Data Flow
+                </button>
+                <button class="network-btn" onclick="highlightThreatPath()">
+                    <i class="fas fa-exclamation-triangle"></i> Show Threat Detection
+                </button>
+            </div>
+            
+            <div class="neural-canvas">
+                <!-- Neural Network Layers -->
+                <div class="network-layer input-layer">
+                    <div class="layer-label">Input Layer<br><span>Behavioral Data</span></div>
+                    <div class="neurons-container">
+                        <div class="neuron" data-neuron="input-1" data-feature="Keystroke Dynamics"></div>
+                        <div class="neuron" data-neuron="input-2" data-feature="Mouse Movements"></div>
+                        <div class="neuron" data-neuron="input-3" data-feature="App Usage"></div>
+                        <div class="neuron" data-neuron="input-4" data-feature="File Access"></div>
+                        <div class="neuron" data-neuron="input-5" data-feature="Network Activity"></div>
+                    </div>
+                </div>
+                
+                <div class="network-layer hidden-layer-1">
+                    <div class="layer-label">Hidden Layer 1<br><span>Pattern Recognition</span></div>
+                    <div class="neurons-container">
+                        <div class="neuron" data-neuron="hidden1-1"></div>
+                        <div class="neuron" data-neuron="hidden1-2"></div>
+                        <div class="neuron" data-neuron="hidden1-3"></div>
+                        <div class="neuron" data-neuron="hidden1-4"></div>
+                    </div>
+                </div>
+                
+                <div class="network-layer hidden-layer-2">
+                    <div class="layer-label">Hidden Layer 2<br><span>Anomaly Detection</span></div>
+                    <div class="neurons-container">
+                        <div class="neuron" data-neuron="hidden2-1"></div>
+                        <div class="neuron" data-neuron="hidden2-2"></div>
+                        <div class="neuron" data-neuron="hidden2-3"></div>
+                    </div>
+                </div>
+                
+                <div class="network-layer output-layer">
+                    <div class="layer-label">Output Layer<br><span>Threat Assessment</span></div>
+                    <div class="neurons-container">
+                        <div class="neuron output-neuron" data-neuron="output-1" data-threat="Low Risk">
+                            <div class="threat-indicator low"></div>
+                            <div class="neuron-label">Low</div>
+                        </div>
+                        <div class="neuron output-neuron" data-neuron="output-2" data-threat="Medium Risk">
+                            <div class="threat-indicator medium"></div>
+                            <div class="neuron-label">Medium</div>
+                        </div>
+                        <div class="neuron output-neuron" data-neuron="output-3" data-threat="High Risk">
+                            <div class="threat-indicator high"></div>
+                            <div class="neuron-label">High</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Connections will be drawn by JavaScript -->
+                <svg class="connections-svg" width="100%" height="100%"></svg>
+            </div>
+            
+            <div class="network-info-panel">
+                <div class="info-header">
+                    <i class="fas fa-brain"></i>
+                    <h3>Neural Network Status</h3>
+                </div>
+                <div class="info-content">
+                    <div class="info-item">
+                        <span class="info-label">Active Neurons:</span>
+                        <span class="info-value" id="activeNeurons">12</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">Connections:</span>
+                        <span class="info-value" id="activeConnections">45</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">Data Processed:</span>
+                        <span class="info-value" id="dataProcessed">2.4M events</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">Current Accuracy:</span>
+                        <span class="info-value" id="networkAccuracy">99.7%</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">Threat Level:</span>
+                        <span class="info-value threat-low" id="currentThreat">Low</span>
+                    </div>
+                </div>
+                <div class="feature-tooltip" id="featureTooltip">
+                    Hover over neurons to see details
+                </div>
+            </div>
+        </div>
+        
+        <div class="ai-grid">
+            <div class="card ai-card animate-float">
+                <div class="ai-card-icon">
+                    <i class="fas fa-chart-bar"></i>
+                </div>
+                <h3 class="ai-card-title">Analyze Behavioral Data</h3>
+                <p>Continuously compares keystrokes, mouse movements, app usage, and file interaction against user profiles in real-time.</p>
+            </div>
+            
+            <div class="card ai-card animate-float" style="animation-delay: 0.2s">
+                <div class="ai-card-icon">
+                    <i class="fas fa-exclamation-triangle"></i>
+                </div>
+                <h3 class="ai-card-title">Anomaly Detection</h3>
+                <p>Identifies deviations from normal user behavior patterns with 99.7% accuracy using advanced ML algorithms.</p>
+            </div>
+            
+            <div class="card ai-card animate-float" style="animation-delay: 0.4s">
+                <div class="ai-card-icon">
+                    <i class="fas fa-brain"></i>
+                </div>
+                <h3 class="ai-card-title">Adaptive Learning</h3>
+                <p>Continuously updates user profiles and detection thresholds to improve accuracy and reduce false positives.</p>
+            </div>
+            
+            <div class="card ai-card animate-float" style="animation-delay: 0.6s">
+                <div class="ai-card-icon">
+                    <i class="fas fa-cogs"></i>
+                </div>
+                <h3 class="ai-card-title">Automated Response</h3>
+                <p>Triggers instant security actions based on threat level: Monitoring (Low), Alerts (Medium), Blocking (High).</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Scope & Limitations Section -->
+    <section id="scope" style="background: rgba(0,0,0,0.3);">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge">SYSTEM BOUNDARIES</div>
+                <h2 class="section-title">Scope & Limitations</h2>
+                <p class="section-description">
+                    Understanding the capabilities and constraints of the SentinelX system for realistic implementation.
+                </p>
+            </div>
+            
+            <div class="scope-limitations-container">
+                <div class="card scope-card animate-float">
+                    <h3 class="scope-title">SCOPE</h3>
+                    
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <i class="fas fa-desktop"></i>
+                        </div>
+                        <div class="feature-text">
+                            <div class="feature-name">Continuous Windows Monitoring</div>
+                            <p>Focuses on Windows desktop environments for enterprise security, tracking user activity in real-time.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <div class="feature-text">
+                            <div class="feature-name">Real-Time Data Collection</div>
+                            <p>Collects behavioral data including keystroke patterns, mouse movements, and application usage for accurate analysis.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <i class="fas fa-user-shield"></i>
+                        </div>
+                        <div class="feature-text">
+                            <div class="feature-name">Insider Threat Detection</div>
+                            <p>Specifically designed to detect insider threats using AI-based behavioral evaluation and anomaly detection.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <i class="fas fa-user-secret"></i>
+                        </div>
+                        <div class="feature-text">
+                            <div class="feature-name">Non-Intrusive Operation</div>
+                            <p>Operates silently in the background without affecting user productivity or system performance.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card limitations-card animate-float" style="animation-delay: 0.3s">
+                    <h3 class="limitations-title">LIMITATIONS</h3>
+                    
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <div class="feature-text">
+                            <div class="feature-name">Data Dependency</div>
+                            <p>Accuracy relies on consistent and high-quality behavioral data collection over time.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <i class="fas fa-exclamation-circle"></i>
+                        </div>
+                        <div class="feature-text">
+                            <div class="feature-name">False Positives</div>
+                            <p>Sudden legitimate changes in user behavior may trigger false positive alerts requiring manual review.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <div class="feature-text">
+                            <div class="feature-name">Training Period Required</div>
+                            <p>Initial training period needed to establish accurate user profiles before optimal performance.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <i class="fas fa-microchip"></i>
+                        </div>
+                        <div class="feature-text">
+                            <div class="feature-name">Resource Usage</div>
+                            <p>Continuous monitoring may slightly increase system resource usage on older hardware.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team" style="background: rgba(0,0,0,0.3);">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge">DEVELOPMENT TEAM</div>
+                <h2 class="section-title">The Minds Behind SentinelX</h2>
+                <p class="section-description">
+                    A dedicated team of Information Technology students from Sinai University.
+                </p>
+            </div>
+            
+            <div class="team-grid">
+                <div class="team-card card animate-float">
+                    <div class="team-avatar">
+                        <img src="images/dunya.jpeg" alt="Donia Mahmoud" style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%;">
+                    </div>
+                    <h3 class="team-name">Donia Mahmoud</h3>
+                    <p style="color: var(--neon-blue); font-weight: 600;">Lead Developer</p>
+                    <p style="font-size: 14px; color: rgba(255,255,255,0.7); margin-top: 10px;">Oversaw project development and integration.</p>
+                </div>
+                
+                <div class="team-card card animate-float" style="animation-delay: 0.1s">
+                    <div class="team-avatar">
+                        <img src="images/mariem.jpeg" alt="Mariem Ibrahem" style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%;">
+                    </div>
+                    <h3 class="team-name">Mariem Ibrahem</h3>
+                    <p style="color: var(--neon-blue); font-weight: 600;">Data Science Specialist</p>
+                    <p style="font-size: 14px; color: rgba(255,255,255,0.7); margin-top: 10px;">Focused on data collection and statistical analysis.</p>
+                </div>
+                
+                <div class="team-card card animate-float" style="animation-delay: 0.2s">
+                    <div class="team-avatar">
+                        <img src="images/zeinab.jpeg" alt="Zeinab Abdelrazik" style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%;">
+                    </div>
+                    <h3 class="team-name">Zeinab Abdelrazik</h3>
+                    <p style="color: var(--neon-blue); font-weight: 600;">System Architect</p>
+                    <p style="font-size: 14px; color: rgba(255,255,255,0.7); margin-top: 10px;">Designed system architecture for Windows deployment.</p>
+                </div>
+                
+                <div class="team-card card animate-float" style="animation-delay: 0.3s">
+                    <div class="team-avatar">
+                        <img src="images/bella.jpeg" alt="Salsabeel Ibrahem" style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%;">
+                    </div>
+                    <h3 class="team-name">Salsabeel Ibrahem</h3>
+                    <p style="color: var(--neon-blue); font-weight: 600;">Security Analyst</p>
+                    <p style="font-size: 14px; color: rgba(255,255,255,0.7); margin-top: 10px;">Developed threat assessment protocols.</p>
+                </div>
+                
+                <div class="team-card card animate-float" style="animation-delay: 0.4s">
+                    <div class="team-avatar">
+                        <img src="images/tasneem.jpeg" alt="Rasneem Adel" style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%;">
+                    </div>
+                    <h3 class="team-name">Tasneem Adel</h3>
+                    <p style="color: var(--neon-blue); font-weight: 600;">UI/UX Designer</p>
+                    <p style="font-size: 14px; color: rgba(255,255,255,0.7); margin-top: 10px;">Created intuitive security dashboards.</p>
+                </div>
+                
+                <div class="team-card card animate-float" style="animation-delay: 0.5s">
+                    <div class="team-avatar">
+                        <img src="images/rana.jpeg" alt="Rana Emam" style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%;">
+                    </div>
+                    <h3 class="team-name">Rana Emam</h3>
+                    <p style="color: var(--neon-blue); font-weight: 600;">Testing & Validation</p>
+                    <p style="font-size: 14px; color: rgba(255,255,255,0.7); margin-top: 10px;">Conducted comprehensive testing and validation.</p>
+                </div>
+                
+                <div class="team-card card animate-float" style="animation-delay: 0.6s">
+                    <div class="team-avatar">
+                        <img src="images/dr.jpeg" alt="Dr. Naseer Tamim" style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%;">
+                    </div>
+                    <h3 class="team-name">Dr. Naseer Tamim</h3>
+                    <p style="color: var(--neon-blue); font-weight: 600;">Project Supervisor</p>
+                    <p style="font-size: 14px; color: rgba(255,255,255,0.7); margin-top: 10px;">Professor of Cybersecurity, providing expert guidance.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Demo -->
+    <section id="demo">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge">LIVE DEMONSTRATION</div>
+                <h2 class="section-title">Interactive System Demo</h2>
+                <p class="section-description">
+                    Experience how SentinelX detects and responds to security threats in real-time.
+                </p>
+            </div>
+            
+            <div class="demo-container animate-float">
+                <div class="demo-screen">
+                    <div class="scanlines"></div>
+                    <div id="demoContent" style="padding: 40px; color: var(--matrix-green); font-family: 'Courier New', monospace; font-size: 1.1rem; line-height: 1.8;">
+                        <div>> INITIALIZING SENTINELX SYSTEM...</div>
+                        <div>> LOADING USER PROFILES... <span id="profileLoad">█ █ █ █ █</span></div>
+                        <div>> MONITORING KEYSTROKE PATTERNS... <span id="keystrokeMonitor"></span></div>
+                        <div>> ANALYZING MOUSE MOVEMENT... <span id="mouseAnalysis"></span></div>
+                        <div>> TRACKING APPLICATION USAGE... <span id="appTracking"></span></div>
+                        <div>> DETECTING ANOMALIES... <span id="anomalyDetection"></span></div>
+                        <div style="margin-top: 30px;">> THREAT LEVEL: <span id="demoThreatLevel" style="color: var(--matrix-green);">LOW</span></div>
+                        <div>> SYSTEM STATUS: <span id="systemStatus" style="color: var(--matrix-green);">SECURE</span></div>
+                    </div>
+                </div>
+                
+                <div style="position: absolute; bottom: 30px; left: 50%; transform: translateX(-50%); display: flex; gap: 15px;">
+                    <button class="btn" onclick="simulateNormalActivity()" style="padding: 12px 25px; font-size: 14px; background: linear-gradient(135deg, var(--matrix-green), #00cc66);">Normal Activity</button>
+                    <button class="btn" onclick="simulateSuspiciousActivity()" style="padding: 12px 25px; font-size: 14px; background: linear-gradient(135deg, var(--warning-yellow), orange);">Suspicious Activity</button>
+                    <button class="btn" onclick="simulateThreatActivity()" style="padding: 12px 25px; font-size: 14px; background: linear-gradient(135deg, var(--danger-red), #cc0033);">Threat Activity</button>
+                </div>
+            </div>
+            
+            <div style="text-align: center; margin-top: 50px;">
+                <div class="threat-visual">
+                    <div class="threat-circle"></div>
+                    <div class="threat-pointer" id="threatPointer"></div>
+                    <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center;">
+                        <div id="threatLevel" style="font-size: 2rem; font-family: 'Orbitron'; color: var(--matrix-green);">LOW</div>
+                        <div style="font-size: 0.9rem; opacity: 0.7;">Threat Level</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div>
+                <div class="logo" style="margin-bottom: 25px;">
+                    <div class="logo-icon">SX</div>
+                    <div class="logo-text">
+                        <div class="logo-title">SentinelX</div>
+                        <div class="logo-subtitle">Sinai University</div>
+                    </div>
+                </div>
+                <p style="color: rgba(255,255,255,0.7); line-height: 1.7; margin-bottom: 30px;">
+                    Advanced Behavioral Threat Detection System<br>
+                    Graduation Project 2024<br>
+                    Information Technology Department
+                </p>
+            </div>
+            
+            <div>
+                <h3 class="footer-heading">Project Sections</h3>
+                <ul style="list-style: none;">
+                    <li style="margin-bottom: 12px;"><a href="#problem" style="color: rgba(255,255,255,0.7); text-decoration: none; transition: color 0.3s;">Problem Statement</a></li>
+                    <li style="margin-bottom: 12px;"><a href="#solution" style="color: rgba(255,255,255,0.7); text-decoration: none; transition: color 0.3s;">Project Objectives</a></li>
+                    <li style="margin-bottom: 12px;"><a href="#workflow" style="color: rgba(255,255,255,0.7); text-decoration: none; transition: color 0.3s;">System Workflow</a></li>
+                    <li style="margin-bottom: 12px;"><a href="#ai" style="color: rgba(255,255,255,0.7); text-decoration: none; transition: color 0.3s;">AI Analysis</a></li>
+                    <li style="margin-bottom: 12px;"><a href="#scope" style="color: rgba(255,255,255,0.7); text-decoration: none; transition: color 0.3s;">Scope & Limitations</a></li>
+                    <li style="margin-bottom: 12px;"><a href="#team" style="color: rgba(255,255,255,0.7); text-decoration: none; transition: color 0.3s;">Our Team</a></li>
+                </ul>
+            </div>
+            
+            <div>
+                <h3 class="footer-heading">Contact</h3>
+                <ul style="list-style: none;">
+                    <li style="margin-bottom: 12px; color: rgba(255,255,255,0.7);">
+                        <i class="fas fa-university" style="margin-right: 10px; color: var(--neon-blue);"></i>Sinai University
+                    </li>
+                    <li style="margin-bottom: 12px; color: rgba(255,255,255,0.7);">
+                        <i class="fas fa-code" style="margin-right: 10px; color: var(--neon-blue);"></i>Information Technology
+                    </li>
+                    <li style="margin-bottom: 12px; color: rgba(255,255,255,0.7);">
+                        <i class="fas fa-users" style="margin-right: 10px; color: var(--neon-blue);"></i>Project Team 2024
+                    </li>
+                    <li style="margin-bottom: 12px; color: rgba(255,255,255,0.7);">
+                        <i class="fas fa-user-tie" style="margin-right: 10px; color: var(--neon-blue);"></i>Dr. Naseer Tamim
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="copyright">
+            <p>&copy; 2024 SentinelX - Behavioral Threat Detection System. All rights reserved.</p>
+            <p style="margin-top: 10px;">Presented for the fulfillment of Bachelor of Science degree requirements.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
